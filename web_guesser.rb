@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader'
 get '/' do
-  "Hello, world!"
+  "The secret number is " + String(rand(101)) +"!"
 end
